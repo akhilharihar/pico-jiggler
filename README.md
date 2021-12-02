@@ -13,7 +13,16 @@ Installation
 Building from source
 --------------------
 
-Follow the instructions in [Getting started with Raspberry Pi Pico](https://datasheets.raspberrypi.org/pico/getting-started-with-pico.pdf) to install the Raspberry Pi Pico SDK. Then run the following:
+Clone this repo and init pico-sdk, tinyusb submodules.
+
+```
+git clone https://github.com/akhilharihar/pico-jiggler
+git submodule update --init
+cd pico-sdk && git submodule update --init
+cd ..
+```
+
+Then run the following:
 
 ```
 mkdir build
