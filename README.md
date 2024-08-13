@@ -13,20 +13,13 @@ Installation
 Building from source
 --------------------
 
-Clone this repo and init pico-sdk, tinyusb submodules.
+Clone this repo and run cmake commands to build project.
 
 ```
-git clone https://github.com/akhilharihar/pico-jiggler
-git submodule update --init
-cd pico-sdk && git submodule update --init
-cd ..
-```
-
-Then run the following:
-
-```
-mkdir build
-cd build
+git clone https://github.com/akhilharihar/pico-jiggler && cd pico-jiggler
+mkdir build && cd build
 cmake ..
 make
 ```
+
+This will generate UF2 FILE with pico board appended to the file name eg: `pico-jiggler.uf2`
